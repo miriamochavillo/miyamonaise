@@ -1,0 +1,84 @@
+/*FRONT TAB*/
+
+body  {
+	background-color: #F1ECE0;
+	background-image: url(frontbg.png);
+	background-repeat: repeat;
+	background-size: 25%;
+	margin-top: 0;
+	}
+
+h1   {
+	color:#324a3d;
+	font-size:400%;
+	text-align: center;
+	}
+
+p   {
+	color:#618F76;
+	font-size:200%;
+	text-align: center;
+	}
+
+.sticky {
+	
+	position: -webkit-sticky;
+	position: sticky;
+	top:0;
+	padding:0px;
+	background-color: #F1ECE0;
+}
+
+/*GRIDED IMAGES*/
+.gridposition {
+	display: flex;
+	justify-content: center;
+	 align-items: center;
+	}
+	
+.imagegrid {
+	display: grid;
+	grid-template-rows: 200px 200px 200px;
+	grid-template-columns: 200px 200px 200px;
+}
+
+/*LOGIN BUTTON*/
+.login-item a {
+	position: relative;
+	display: block;
+  }
+  
+  .login-item .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	background-color: #618F76;
+	color: #F1ECE0;
+	font-size: 150%;
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+  }
+  
+  .login-item:hover .overlay {
+	opacity: 1;
+  }
+  
+/*SOCIAL MEDIA ICONS*/
+.media-container {
+	display: flex;
+	justify-content: center;
+	padding-top: 2%;
+  }
+  
+.media-container img {
+	width: 40px;
+	height: auto;
+	margin: 0 2px;
+  
+}
